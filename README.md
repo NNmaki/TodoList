@@ -16,6 +16,8 @@ Installing Laravel and setting up the development environment also took a bit of
 
 Deploying the project didn’t work on my shared hosting provider, as Laravel is better suited for isolated environments or on a dedicated virtual server. Laravels routing does not function correctly if the project is installed in a subdirectory, it should always be placed in the root document directory. However I managed to publish it using a subdomain, which required some modifications to the server configuration to ensure incoming traffic was routed correctly.
 
+A bit challenging but very interesting exercise!
+
 Hosted here: https://todolist.nnmaki.com/
 
 #
