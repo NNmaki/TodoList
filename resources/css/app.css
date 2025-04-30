@@ -1,0 +1,201 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+body {
+    background-color: #79C1F3;
+    text-align: center;
+    color: #1b1b18;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.main-section  {
+    border-radius: 9px;
+    background-color: #FDFDFC;
+    text-align: center;
+    min-height: 400px;
+    margin: 50px auto 100px auto;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.title-section i {
+    margin-top: 15px;
+    font-size: 4.0rem;
+    color: rgb(51, 51, 51);
+}
+
+#task-title {
+    font-size: 1.0rem;
+}
+
+.main-section h1 {
+    color: rgb(51, 51, 51);
+}
+
+.output-container {
+    /* background-color: green; */
+    max-width: 40vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.output-container i {
+    margin: 0 5px 0 0 ;
+    padding: 0%;
+    font-size: 2.0rem;
+    color: rgb(51, 51, 51);
+    
+}
+
+.output-container-inner-l {
+    margin-right: 20px;
+    
+    text-align: left;
+}
+
+.output-container-inner-c {
+    width: 30vw;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.output-container-inner-r {
+    /* width: 400px; */
+    
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+  
+
+}
+
+.output-container-wrapper {
+    background-color: #EDEEF0;
+    border-radius: 7px;
+    display: flex;
+    padding: 5px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.output-container-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #ededed;
+}
+
+
+.form-container {
+    
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 25px 15px 25px 15px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+/* 
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+} */
+
+input {
+    width: 250px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+input[type=text]:focus {
+    background-color: #ededed;
+}
+
+#completed-icon {
+    transition: transform 0.2s ease;
+}
+
+#completed-icon:hover {
+    transform: scale(1.2);
+}
+
+#button-save {
+    background-color:#393E41;
+    color: white;   
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+#button-complete {
+    background-color:#393E41;
+    color: white;   
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 130px;
+    padding: 10px 5px 10px 5px;
+    font-weight: 600;
+    margin: 20px 5px 20px 5px;   
+}
+
+#button-hide {
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+#button-hide:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#button-complete:hover {
+    background-color: #79C1F3;
+    cursor: pointer;
+}
+
+
+#button-save:hover {
+    background-color: #79C1F3;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    font-style: italic;
+    color: rgb(51, 51, 51);
+}
